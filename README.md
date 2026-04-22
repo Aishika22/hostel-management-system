@@ -4,6 +4,22 @@ A full-stack web application developed using Flask to manage hostel operations s
 
 ---
 
+## 📸 Screenshots
+
+### 🔐 Login Page
+
+![Login](static/screenshots/login.png)
+
+### 📊 Dashboard
+
+![Dashboard](static/screenshots/dashboard.png)
+
+### 📋 Student Management
+
+![Students](static/screenshots/students.png)
+
+---
+
 ## 🚀 Features
 
 * 🔐 Secure Admin Login (Password Hashing)
@@ -12,7 +28,7 @@ A full-stack web application developed using Flask to manage hostel operations s
 * ✏️ Edit Student Information
 * ❌ Delete Student Records
 * 🔍 Search Students
-* 🛏️ Automatic Room Allocation
+* 🛏️ Automatic Room Allocation (2 students per room)
 * 💳 Fee Status (Paid / Pending)
 * 📊 Dashboard with Charts (Chart.js)
 * 📥 Export Data to CSV
@@ -25,7 +41,7 @@ A full-stack web application developed using Flask to manage hostel operations s
 * **Frontend:** HTML, CSS, Bootstrap
 * **Backend:** Python (Flask)
 * **Database:** SQLite
-* **Visualization:** Chart.js
+* **Charts:** Chart.js
 * **Version Control:** Git & GitHub
 
 ---
@@ -38,8 +54,19 @@ hostel_management/
 ├── app.py
 ├── database.py
 ├── templates/
+│   ├── login.html
+│   ├── dashboard.html
+│   ├── add_student.html
+│   ├── view_students.html
+│   ├── edit.html
+│   ├── rooms.html
+│
 ├── static/
+│   ├── images/
+│   └── screenshots/
+│
 ├── requirements.txt
+├── Procfile
 └── README.md
 ```
 
@@ -53,7 +80,7 @@ hostel_management/
 git clone https://github.com/YOUR_USERNAME/hostel-management-system.git
 ```
 
-2. Navigate to project folder:
+2. Navigate to the project folder:
 
 ```
 cd hostel-management-system
@@ -65,7 +92,7 @@ cd hostel-management-system
 pip install flask werkzeug
 ```
 
-4. Run database setup:
+4. Setup database:
 
 ```
 python database.py
@@ -92,11 +119,11 @@ http://127.0.0.1:5000/
 
 ---
 
-## 📊 Dashboard
+## 📊 Dashboard Details
 
-* Displays total students
+* Displays total number of students
 * Shows total fees collected
-* Visualizes data using charts
+* Visualizes fee status (Paid vs Pending) using charts
 
 ---
 
@@ -104,18 +131,18 @@ http://127.0.0.1:5000/
 
 * 📷 Student Photo Upload
 * 💳 Online Fee Payment Integration
-* 📱 Mobile Application
 * 🌐 Live Deployment
 * 🔔 Notification System
+* 📱 Mobile App Version
 
 ---
 
 ## 🎯 Project Objective
 
-To develop an efficient and user-friendly system for managing hostel operations digitally, reducing manual work and improving accuracy.
+To design and develop a user-friendly system that automates hostel management tasks, reduces manual effort, and improves data accuracy.
 
 ---
 
-## ⭐ GitHub Repository
+## ⭐ Support
 
 If you found this project useful, consider giving it a ⭐ on GitHub!
