@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="container mt-5">
+
+<h2>Room Status</h2>
+
+<table class="table">
+<tr><th>Room</th><th>Occupied</th><th>Status</th></tr>
+
+{% for r in rooms %}
+<tr>
+<td>{{ r[0] }}</td>
+<td>{{ r[1] }}/2</td>
+<td>
+{% if r[1] >= 2 %}
+<span class="text-danger">Full</span>
+{% else %}
+<span class="text-success">Available</span>
+{% endif %}
+</td>
+</tr>
+{% endfor %}
+
+</table>
+
+</body>
+</html>
